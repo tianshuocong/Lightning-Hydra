@@ -78,4 +78,6 @@
 
 - :heart: HPO with Optuna: `python train.py -m hparams_search=mnist_optuna experiment=example`  We can define everything in a single [config file](https://github.com/ashleve/lightning-hydra-template/blob/main/configs/hparams_search/mnist_optuna.yaml)
 
-- Execute all experiments from folder `configs/experiment/` through `python train.py -m 'experiment=glob(*)'`
+- Execute all experiments from the folder `configs/experiment/` through `python train.py -m 'experiment=glob(*)'`
+
+- Execute with multiple seed `python train.py -m seed=1,2,3,4,5 trainer.deterministic=True logger=csv tags=["benchmark"]` 
