@@ -74,7 +74,9 @@
 
 - Evaluate ckpt on test dataset `python eval.py ckpt_path="/path/to/ckpt/name.ckpt"`
 
-- Create a sweep over hyperparameters `python train.py -m datamodule.batch_size=32,64,128 model.lr=0.001,0.0005` 🥑 6 different combination 🥑
+- Create a sweep over hyperparameters `python train.py -m datamodule.batch_size=32,64,128 model.lr=0.001,0.0005` 
+
+  🥑 result in 6 different combination 
 
 - :heart: HPO with Optuna: `python train.py -m hparams_search=mnist_optuna experiment=example`  We can define everything in a single [config file](https://github.com/ashleve/lightning-hydra-template/blob/main/configs/hparams_search/mnist_optuna.yaml)
 
