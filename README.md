@@ -7,7 +7,7 @@ Learn how to use [lightning-hydra-template](https://github.com/ashleve/lightning
 - [Hydra](https://github.com/facebookresearch/hydra): a framework for elegantly configuring complex applications. The key feature is the ability to dynamically create a hierarchical configuration by composition and override it through config files and the command line.
 
 
-# Project Structure
+## Project Structure
 
 ```
 ├── configs                   <- Hydra configuration files
@@ -57,7 +57,15 @@ Learn how to use [lightning-hydra-template](https://github.com/ashleve/lightning
 └── README.md
 ```
 
+## Command Line
 
+- Config parameter
+`python train.py trainer.max_epochs=20 model.optimizer.lr=1e-4`
 
+- Add new parameters `python train.py +model.new_param="owo"`
 
+- Training device `python train.py trainer=gpu`
 
+- Train with mixed precision `python train.py trainer=gpu +trainer.precision=16`
+
+- Train model with [configs/experiment](https://github.com/ashleve/lightning-hydra-template/blob/main/configs/experiment/example.yaml) `python train.py experiment=example`
