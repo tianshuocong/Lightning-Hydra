@@ -68,4 +68,4 @@ Learn how to use [lightning-hydra-template](https://github.com/ashleve/lightning
 
 - Train with mixed precision `python train.py trainer=gpu +trainer.precision=16`
 
-- Train model with [configs/experiment](https://github.com/ashleve/lightning-hydra-template/blob/main/configs/experiment/example.yaml) `python train.py experiment=example`
+- Train model with [configs/experiment/example.yaml](https://github.com/ashleve/lightning-hydra-template/blob/main/configs/experiment/example.yaml) `python train.py experiment=example`
