@@ -69,3 +69,11 @@ Learn how to use [lightning-hydra-template](https://github.com/ashleve/lightning
 - Train with mixed precision `python train.py trainer=gpu +trainer.precision=16`
 
 - Train model with [configs/experiment/example.yaml](https://github.com/ashleve/lightning-hydra-template/blob/main/configs/experiment/example.yaml) `python train.py experiment=example`
+
+- Resume ckpt `python train.py ckpt_path="/path/to/ckpt/name.ckpt"`
+
+- Evaluate ckpt on test dataset `python eval.py ckpt_path="/path/to/ckpt/name.ckpt"`
+
+- Create a sweep over hyperparameters `python train.py -m datamodule.batch_size=32,64,128 model.lr=0.001,0.0005` ❤️
+
+
