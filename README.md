@@ -74,6 +74,6 @@ Learn how to use [lightning-hydra-template](https://github.com/ashleve/lightning
 
 - Evaluate ckpt on test dataset `python eval.py ckpt_path="/path/to/ckpt/name.ckpt"`
 
-- Create a sweep over hyperparameters `python train.py -m datamodule.batch_size=32,64,128 model.lr=0.001,0.0005` ❤️
+- Create a sweep over hyperparameters `python train.py -m datamodule.batch_size=32,64,128 model.lr=0.001,0.0005` :heart:
 
 
