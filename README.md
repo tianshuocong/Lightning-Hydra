@@ -1,6 +1,6 @@
 # Lightning-Hydra
 
-Learn how to use [lightning-hydra-template](https://github.com/ashleve/lightning-hydra-template).
+🚡 Let's learn how to use [lightning-hydra-template](https://github.com/ashleve/lightning-hydra-template)!
 
 - [PyTorch Lightning](https://github.com/Lightning-AI/lightning): a lightweight PyTorch wrapper for high-performance AI research. Think of it as a framework for organizing your PyTorch code.
 
