@@ -9,6 +9,7 @@ Learn how to use [lightning-hydra-template](https://github.com/ashleve/lightning
 
 # Project Structure
 
+```
 ├── configs                   <- Hydra configuration files
 │   ├── callbacks                <- Callbacks configs
 │   ├── datamodule               <- Datamodule configs
@@ -54,3 +55,9 @@ Learn how to use [lightning-hydra-template](https://github.com/ashleve/lightning
 ├── requirements.txt          <- File for installing python dependencies
 ├── setup.py                  <- File for installing project as a package
 └── README.md
+```
+
+
+
+
+
