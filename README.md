@@ -88,6 +88,14 @@
 
 ## Workflow
 
+1. Write PyTorch Lightning module `models/mnist_module.py`
+
+2. 
+
+
+
+
+
 - Model config:
 ```yaml
 _target_: src.models.mnist_model.MNISTLitModule
