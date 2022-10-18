@@ -123,6 +123,15 @@ pytest tests/test_train.py
 ```
 
 
+## Hyperparameter Search
+
+1. Config file is in `configs/hparams_search`
+
+2. Command line: `python train.py -m hparams_search=mnist_optuna`
+
+3. Supported frameworks: Optuna, Ax, and Nevergrad
+
+4. The `optimization_results.yaml` will be available under `logs/task_name/multirun` folder.
 
 
 
