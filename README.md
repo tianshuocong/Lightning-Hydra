@@ -88,6 +88,8 @@
 
 ## Workflow
 
+### Steps
+
 1. Write PyTorch Lightning module as `src/models/mnist_module.py`
 
 2. Write PyTorch Lightning datamodule as `src/datamodules/mnist_datamodule.py`
@@ -96,28 +98,33 @@
 
 4. Run training with command line as `python src/train.py experiment=experiment_name.yaml`
 
+### Experiment design
 
-- Model config:
-```yaml
-_target_: src.models.mnist_model.MNISTLitModule
-lr: 0.001
-net:
-  _target_: src.models.components.simple_dense_net.SimpleDenseNet
-  input_size: 784
-  lin1_size: 256
-  lin2_size: 256
-  lin3_size: 256
-  output_size: 10
-```
+1. Acc VS Batch size
 
-- instantiate the object
-```python
-model = hydra.utils.instantiate(config.model)
-```
-- command line
 ```bash
-python train.py model=mnist
+python train.py -m logger=csv datamodule.batch_size=16,32,64,128 tags=["batch_size_exp"]
 ```
+
+2. Logs
+
+Configuration is in `configs/logger` and run 
+
+```bash
+python train.py logger=logger_name
+```
+
+3. Tests
+
+```bash
+pytest
+
+pytest tests/test_train.py
+```
+
+
+
+
 
 ## Q&A
 
