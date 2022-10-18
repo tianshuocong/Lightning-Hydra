@@ -9,12 +9,12 @@ defaults:
   - datamodule: mnist.yaml
   - model: mnist.yaml
   - callbacks: default.yaml
-  - logger: null # set logger here or use command line (e.g. `python train.py logger=tensorboard`)
+  - logger: null                 # set logger here or use command line (e.g. `python train.py logger=tensorboard`)
   - trainer: default.yaml
   - paths: default.yaml
   - extras: default.yaml
   - hydra: default.yaml
-  - experiment: null      # python train.py experiment=example
+  - experiment: null             # python train.py experiment=example
   - hparams_search: null
   - optional local: default.yaml
   - debug: null
