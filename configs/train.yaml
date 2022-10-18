@@ -1,0 +1,29 @@
+# Main project config contains default training configuration.
+# It determines how config is composed when simply executing command `python train.py`.
+
+
+# @package _global_
+
+defaults:
+  - _self_
+  - datamodule: mnist.yaml
+  - model: mnist.yaml
+  - callbacks: default.yaml
+  - logger: null # set logger here or use command line (e.g. `python train.py logger=tensorboard`)
+  - trainer: default.yaml
+  - paths: default.yaml
+  - extras: default.yaml
+  - hydra: default.yaml
+  - experiment: null
+  - hparams_search: null
+  - optional local: default.yaml
+  - debug: null
+
+task_name: "train"
+tags: ["dev"]
+
+train: True
+test: True
+
+ckpt_path: null
+seed: null
