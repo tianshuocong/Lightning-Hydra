@@ -2,6 +2,8 @@
 
 🚡 Let's learn how to use [lightning-hydra-template](https://github.com/ashleve/lightning-hydra-template)!
 
+## Introduction
+
 - [PyTorch Lightning](https://github.com/Lightning-AI/lightning): a lightweight PyTorch wrapper for high-performance AI research. Think of it as a framework for organizing your PyTorch code.
 
 - [Hydra](https://github.com/facebookresearch/hydra): a framework for elegantly configuring complex applications. The key feature is the ability to dynamically create a hierarchical configuration by composition and override it through config files and the command line.
@@ -100,11 +102,11 @@ net:
 ```
 
 - instantiate the object
-```
+```python
 model = hydra.utils.instantiate(config.model)
 ```
 - command line
-```
+```bash
 python train.py model=mnist
 ```
 
