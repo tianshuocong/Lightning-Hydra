@@ -87,7 +87,7 @@
 ## Workflow
 
 - Model config:
-```
+```yaml
 _target_: src.models.mnist_model.MNISTLitModule
 lr: 0.001
 net:
