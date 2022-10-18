@@ -88,9 +88,9 @@
 
 ## Workflow
 
-1. Write PyTorch Lightning module as `models/mnist_module.py`
+1. Write PyTorch Lightning module as `src/models/mnist_module.py`
 
-2. Write PyTorch Lightning datamodule as `datamodules/mnist_datamodule.py`
+2. Write PyTorch Lightning datamodule as `src/datamodules/mnist_datamodule.py`
 
 3. Write experiment config.
 
