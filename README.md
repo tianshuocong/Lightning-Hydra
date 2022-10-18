@@ -84,7 +84,29 @@
 
 - Execute with multiple seed `python train.py -m seed=1,2,3,4,5 trainer.deterministic=True logger=csv tags=["benchmark"]`
 
+## Workflow
 
+- Model config:
+```
+_target_: src.models.mnist_model.MNISTLitModule
+lr: 0.001
+net:
+  _target_: src.models.components.simple_dense_net.SimpleDenseNet
+  input_size: 784
+  lin1_size: 256
+  lin2_size: 256
+  lin3_size: 256
+  output_size: 10
+```
+
+- instantiate the object
+```
+model = hydra.utils.instantiate(config.model)
+```
+- command line
+```
+python train.py model=mnist
+```
 
 ## Q&A
 
