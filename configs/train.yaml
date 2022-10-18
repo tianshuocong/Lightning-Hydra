@@ -14,7 +14,7 @@ defaults:
   - paths: default.yaml
   - extras: default.yaml
   - hydra: default.yaml
-  - experiment: null
+  - experiment: null      # python train.py experiment=example
   - hparams_search: null
   - optional local: default.yaml
   - debug: null
