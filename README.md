@@ -82,4 +82,10 @@
 
 - Execute all experiments from the folder `configs/experiment/` through `python train.py -m 'experiment=glob(*)'`
 
-- Execute with multiple seed `python train.py -m seed=1,2,3,4,5 trainer.deterministic=True logger=csv tags=["benchmark"]` 
+- Execute with multiple seed `python train.py -m seed=1,2,3,4,5 trainer.deterministic=True logger=csv tags=["benchmark"]`
+
+
+
+## Q&A
+
+- [Conditional Search space](https://github.com/facebookresearch/hydra/issues/1906)
